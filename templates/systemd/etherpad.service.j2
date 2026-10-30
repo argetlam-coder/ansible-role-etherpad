@@ -26,7 +26,7 @@ ExecStartPre={{ devture_systemd_docker_base_host_command_docker }} create \
       --rm \
       --name={{ etherpad_identifier }} \
       --log-driver=none \
-      --user={{ etherpad_uid }}:{{ etherpad_gid }} \
+      --user={{ etherpad_container_uid }}:{{ etherpad_container_gid }} \
       --cap-drop=ALL \
       --read-only \
       --network={{ etherpad_container_network }} \

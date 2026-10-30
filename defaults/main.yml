@@ -25,6 +25,12 @@ etherpad_version: 3.3.12
 etherpad_uid: ""
 etherpad_gid: ""
 
+# Controls the user that the container runs as. Set to `0` to run as root.
+etherpad_container_uid: "{{ etherpad_uid }}"
+
+# Controls the group that the container runs as. Set to `0` to run as root.
+etherpad_container_gid: "{{ etherpad_gid }}"
+
 # The scheme used for serving Etherpad.
 etherpad_scheme: https
 
